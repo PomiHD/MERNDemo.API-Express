@@ -3,6 +3,7 @@
 const {
   getPlaceById,
   getPlacesByUserId,
+  createPlace,
 } = require("../controllers/places-controllers");
 
 const router = express.Router();
@@ -18,5 +19,7 @@ router.get("/:pid", getPlaceById);
  * @desc    Get place by user id
  */
 router.get("/user/:uid", getPlacesByUserId);
+
+router.post("/", createPlace);
 
 module.exports = router;
