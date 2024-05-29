@@ -16,4 +16,11 @@ app.use((error, req, res, next) => {
   res.json({ message: error.message || "An unknown error occurred!" });
 });
 
+// Additional error handling middleware
+app.use((error, req, res, next) => {
+  // Log the error or do something else with it here
+  console.error(error);
+  res.end();
+});
+
 app.listen(5000);
