@@ -51,7 +51,7 @@ const createPlace = (req, res, next) => {
     creator,
   };
 
-  DUMMY_PLACES.push(createdPlace);
+  DUMMY_PLACES.push(createdPlace); // ideally, should be stored in a database
   res.status(201).json({ place: createdPlace });
 };
 
