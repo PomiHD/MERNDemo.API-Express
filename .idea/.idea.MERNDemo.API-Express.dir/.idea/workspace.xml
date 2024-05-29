@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="Additional error handling middleware">
-      <change afterPath="$PROJECT_DIR$/models/http-error.js" afterDir="false" />
+    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/places-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/places-routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users-route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users-routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +72,7 @@
       <workItem from="1716800015088" duration="4072000" />
       <workItem from="1716804182416" duration="1433000" />
       <workItem from="1716825116091" duration="6600000" />
-      <workItem from="1716948968464" duration="2521000" />
+      <workItem from="1716948968464" duration="3303000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -118,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716949053282</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="94. Adding our own Error Model">
+      <option name="closed" value="true" />
+      <created>1716951877553</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716951877553</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +148,8 @@
     <MESSAGE value="92. Getting a Place By User ID" />
     <MESSAGE value="93. Handling Errors" />
     <MESSAGE value="Additional error handling middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Additional error handling middleware" />
+    <MESSAGE value="94. Adding our own Error Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="94. Adding our own Error Model" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
