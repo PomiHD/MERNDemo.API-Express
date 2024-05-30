@@ -27,14 +27,14 @@ const getPlaceById = (req, res, next) => {
 
 const getPlacesByUserId = (req, res, next) => {
   const userId = req.params.uid;
-  const place = DUMMY_PLACES.find((place) => place.creator === userId);
-  if (!place) {
+  const places = DUMMY_PLACES.filter((place) => place.creator === userId);
+  if (!places || places.length === 0) {
     // different way to throw an error, this is for async code
     return next(
-      new HttpError("Could not find a place for the provided user id.", 404),
+      new HttpError("Could not find places for the provided user id.", 404),
     ); // This will be caught in the error handling middleware
   }
-  res.json({ place });
+  res.json({ places });
 };
 // alternative ways
 // function getPlaceById() {...}
