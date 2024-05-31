@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/users-controllers.js" afterDir="false" />
+    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="102. Setting Up the User Routes (Signup, Login, Get Users)">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/places-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/places-controllers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/places-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/places-routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users-routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +84,7 @@
       <workItem from="1716958063829" duration="390000" />
       <workItem from="1716958535421" duration="1425000" />
       <workItem from="1717072768449" duration="10874000" />
-      <workItem from="1717137798076" duration="1008000" />
+      <workItem from="1717137798076" duration="2366000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -187,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717083993903</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="102. Setting Up the User Routes (Signup, Login, Get Users)">
+      <option name="closed" value="true" />
+      <created>1717138895268</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1717138895268</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +232,8 @@
     <MESSAGE value="98. Adding Patch Routes to Update Places" />
     <MESSAGE value="99. Deleting Places" />
     <MESSAGE value="100. Finalizing the &quot;Get Places by User ID&quot; Resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="100. Finalizing the &quot;Get Places by User ID&quot; Resource" />
+    <MESSAGE value="102. Setting Up the User Routes (Signup, Login, Get Users)" />
+    <option name="LAST_COMMIT_MESSAGE" value="102. Setting Up the User Routes (Signup, Login, Get Users)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
