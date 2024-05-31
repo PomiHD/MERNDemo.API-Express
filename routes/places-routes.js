@@ -33,7 +33,14 @@ router.post(
   createPlace,
 );
 
-router.patch("/:pid", updatePlace);
+router.patch(
+  "/:pid",
+  [
+    check("title").optional().not().isEmpty(),
+    check("description").optional().isLength({ min: 5 }),
+  ],
+  updatePlace,
+);
 
 router.delete("/:pid", deletePlace);
 

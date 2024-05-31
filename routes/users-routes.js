@@ -6,8 +6,23 @@ const router = express.Router();
 
 router.get("/", getUsers);
 
-router.post("/signup", signup);
+router.post(
+  "/signup",
+  [
+    check("name").notEmpty(),
+    check("email").normalizeEmail().isEmail(),
+    check("password").isLength({ min: 6 }),
+  ],
+  signup,
+);
 
-router.post("/login", login);
+router.post(
+  "/login",
+  [
+    check("email").normalizeEmail().isEmail(),
+    check("password").isLength({ min: 6 }),
+  ],
+  login,
+);
 
 module.exports = router;

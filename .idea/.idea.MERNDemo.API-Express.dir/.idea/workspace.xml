@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="102. Setting Up the User Routes (Signup, Login, Get Users)">
+    <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="103. Validating API Input (Request Bodies)">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/places-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/places-controllers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/users-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users-controllers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/places-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/places-routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/users-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users-routes.js" afterDir="false" />
     </list>
@@ -27,6 +25,9 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/dev/MERNDemo.API-Express/node_modules/.package-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -84,7 +85,7 @@
       <workItem from="1716958063829" duration="390000" />
       <workItem from="1716958535421" duration="1425000" />
       <workItem from="1717072768449" duration="10874000" />
-      <workItem from="1717137798076" duration="2366000" />
+      <workItem from="1717137798076" duration="3752000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -198,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717138895268</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="103. Validating API Input (Request Bodies)">
+      <option name="closed" value="true" />
+      <created>1717140489017</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1717140489017</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,7 +242,8 @@
     <MESSAGE value="99. Deleting Places" />
     <MESSAGE value="100. Finalizing the &quot;Get Places by User ID&quot; Resource" />
     <MESSAGE value="102. Setting Up the User Routes (Signup, Login, Get Users)" />
-    <option name="LAST_COMMIT_MESSAGE" value="102. Setting Up the User Routes (Signup, Login, Get Users)" />
+    <MESSAGE value="103. Validating API Input (Request Bodies)" />
+    <option name="LAST_COMMIT_MESSAGE" value="103. Validating API Input (Request Bodies)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
