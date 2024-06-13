@@ -19,14 +19,25 @@ let DUMMY_PLACES = [
   },
 ];
 
-const getPlaceById = (req, res, next) => {
+const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
-  const place = DUMMY_PLACES.find((place) => place.id === placeId);
-  if (!place) {
-    // different way to throw an error, this is for sync code
-    throw new HttpError("Could not find a place for the provided id.", 404); // This will be caught in the error handling middleware
+  let place;
+  try {
+    place = await Place.findById(placeId);
+  } catch (err) {
+    return next(
+      new HttpError("Something went wrong, could not find a place", 404),
+    ); // This will be caught in the error handling middleware
   }
-  res.json({ place });
+
+  if (!place) {
+    //   // different way to throw an error, this is for sync code
+    //   throw new HttpError("Could not find a place for the provided id.", 404); // This will be caught in the error handling middleware
+    return next(
+      new HttpError("Could not find a place for the provided id.", 404),
+    ); // This will be caught in the error handling middleware
+  }
+  res.json({ place: place.toObject({ getters: true }) }); // toObject() is a mongoose method to convert the document to a plain JS object
 };
 
 const getPlacesByUserId = (req, res, next) => {
