@@ -5,20 +5,6 @@ const { validationResult } = require("express-validator");
 const getCoordsForAddress = require("../util/location");
 const Place = require("../models/place");
 
-let DUMMY_PLACES = [
-  {
-    id: "p1",
-    title: "Empire State Building",
-    description: "One of the most famous sky scrapers in the world!",
-    location: {
-      lat: 40.7484474,
-      lng: -73.9871516,
-    },
-    address: "20 W 34th St, New York, NY 10001",
-    creator: "u1",
-  },
-];
-
 const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
   let place;
@@ -93,7 +79,7 @@ const createPlace = async (req, res, next) => {
   });
 
   try {
-    const result = await createdPlace.save();
+    await createdPlace.save();
   } catch (err) {
     const error = new HttpError(
       "Creating place failed, please try again.",
@@ -137,14 +123,30 @@ const updatePlace = async (req, res, next) => {
   res.json({ place: place.toObject({ getters: true }) });
 };
 
-const deletePlace = (req, res, next) => {
+const deletePlace = async (req, res, next) => {
   const placeId = req.params.pid;
 
-  if (!DUMMY_PLACES.find((place) => place.id === placeId)) {
-    throw new HttpError("Could not find a place for that id.", 404);
+  let place;
+  try {
+    place = await Place.findById(placeId);
+  } catch (err) {
+    return next(
+      new HttpError("Something went wrong, could not delete place.", 500),
+    );
   }
 
-  DUMMY_PLACES = DUMMY_PLACES.filter((place) => place.id !== placeId);
+  if (!place) {
+    return next(new HttpError("No place found, could not delete place.", 404));
+  }
+
+  try {
+    await Place.findByIdAndDelete(placeId);
+  } catch (err) {
+    return next(
+      new HttpError("Something went wrong, could not delete place.", 500),
+    );
+  }
+
   res.status(200).json({ message: "Deleted place." });
 };
 
