@@ -1,9 +1,11 @@
 ﻿const HttpError = require("../models/http-error");
 const { v4: uuidv4 } = require("uuid");
 const { validationResult } = require("express-validator");
+const mongoose = require("mongoose");
 
 const getCoordsForAddress = require("../util/location");
 const Place = require("../models/place");
+const User = require("../models/user");
 
 const getPlaceById = async (req, res, next) => {
   const placeId = req.params.pid;
@@ -78,8 +80,28 @@ const createPlace = async (req, res, next) => {
     creator,
   });
 
+  let user;
   try {
-    await createdPlace.save();
+    user = await User.findById(creator); // exclude password
+  } catch (err) {
+    return next(
+      new HttpError("Creating place failed, please try again later.", 500),
+    );
+  }
+
+  if (!user) {
+    const error = new HttpError("Could not find user for provided id.", 404);
+    return next(error);
+  }
+  console.log(user);
+
+  try {
+    const sess = await mongoose.startSession();
+    sess.startTransaction();
+    await createdPlace.save({ session: sess }); // This will not save the place to the database, but it will add it to the session
+    user.places.push(createdPlace); // Mongoose will automatically extract the id from the place object and then store it in the user.places array
+    await user.save({ session: sess });
+    await sess.commitTransaction();
   } catch (err) {
     const error = new HttpError(
       "Creating place failed, please try again.",
