@@ -86,6 +86,8 @@
       <workItem from="1718076282144" duration="68000" />
       <workItem from="1718161094700" duration="7555000" />
       <workItem from="1718250770191" duration="631000" />
+      <workItem from="1718429845958" duration="6664000" />
+      <workItem from="1718612469345" duration="661000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -263,7 +265,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718243413526</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="131. Updating Places">
+      <option name="closed" value="true" />
+      <created>1718431456166</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1718431456166</updated>
+    </task>
+    <task id="LOCAL-00024" summary="132. Deleting Places">
+      <option name="closed" value="true" />
+      <created>1718435142380</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1718435142380</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +324,9 @@
     <MESSAGE value="128. Creating &amp; Storing Documents in the Database" />
     <MESSAGE value="129. Getting Places by the PlaceID" />
     <MESSAGE value="130. Getting Places by the UserID" />
-    <option name="LAST_COMMIT_MESSAGE" value="130. Getting Places by the UserID" />
+    <MESSAGE value="131. Updating Places" />
+    <MESSAGE value="132. Deleting Places" />
+    <option name="LAST_COMMIT_MESSAGE" value="132. Deleting Places" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
