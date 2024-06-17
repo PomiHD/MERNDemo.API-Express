@@ -100,8 +100,8 @@ const createPlace = async (req, res, next) => {
     sess.startTransaction();
     await createdPlace.save({ session: sess }); // This will not save the place to the database, but it will add it to the session
     user.places.push(createdPlace); // Mongoose will automatically extract the id from the place object and then store it in the user.places array
-    await user.save({ session: sess });
-    await sess.commitTransaction();
+    await user.save({ session: sess }); // This will not save the user to the database, but it will add it to the session
+    await sess.commitTransaction(); // This will save the session to the database, which will save the place and the user to the database
   } catch (err) {
     const error = new HttpError(
       "Creating place failed, please try again.",
@@ -152,7 +152,7 @@ const deletePlace = async (req, res, next) => {
 
   let place;
   try {
-    place = await Place.findById(placeId);
+    place = await Place.findById(placeId).populate("creator");
   } catch (err) {
     return next(
       new HttpError("Something went wrong, could not delete place.", 500),
@@ -160,11 +160,16 @@ const deletePlace = async (req, res, next) => {
   }
 
   if (!place) {
-    return next(new HttpError("No place found, could not delete place.", 404));
+    return next(new HttpError("Could not find place for this id.", 404));
   }
 
   try {
-    await Place.findByIdAndDelete(placeId);
+    const sess = await mongoose.startSession();
+    sess.startTransaction();
+    await Place.findByIdAndDelete(placeId, { session: sess });
+    place.creator.places.pull(place); // Mongoose will automatically remove the id from the user.places array
+    await place.creator.save({ session: sess });
+    await sess.commitTransaction();
   } catch (err) {
     return next(
       new HttpError("Something went wrong, could not delete place.", 500),
