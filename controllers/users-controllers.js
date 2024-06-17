@@ -37,7 +37,7 @@ const signup = async (req, res, next) => {
     );
   }
 
-  const { name, email, password, places } = req.body;
+  const { name, email, password } = req.body;
 
   let existingUser;
   try {
@@ -64,7 +64,7 @@ const signup = async (req, res, next) => {
     password,
     image:
       "https://images3.memedroid.com/images/UPLOADED466/5ea63705d0f23.jpeg",
-    places,
+    places: [],
   });
 
   try {
