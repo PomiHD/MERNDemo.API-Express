@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/places-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/places-controllers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +24,6 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/dev/MERNDemo.API-Express/node_modules/.package-lock.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/dev/MERNDemo.API-Express/node_modules/.package-lock.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
@@ -65,6 +65,18 @@
     ]
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -88,6 +100,8 @@
       <workItem from="1718250770191" duration="631000" />
       <workItem from="1718429845958" duration="6664000" />
       <workItem from="1718612469345" duration="661000" />
+      <workItem from="1718615909422" duration="12787000" />
+      <workItem from="1718684105596" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -281,7 +295,71 @@
       <option name="project" value="LOCAL" />
       <updated>1718435142380</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="134. Creating the User Model">
+      <option name="closed" value="true" />
+      <created>1718617168121</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1718617168121</updated>
+    </task>
+    <task id="LOCAL-00026" summary="135. Using the User Model for Signup">
+      <option name="closed" value="true" />
+      <created>1718618655254</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1718618655254</updated>
+    </task>
+    <task id="LOCAL-00027" summary="136. Adding the User Login">
+      <option name="closed" value="true" />
+      <created>1718619766231</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1718619766231</updated>
+    </task>
+    <task id="LOCAL-00028" summary="137. Getting Users">
+      <option name="closed" value="true" />
+      <created>1718620256549</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1718620256549</updated>
+    </task>
+    <task id="LOCAL-00029" summary="138. Adding the Relation between Places &amp; Users">
+      <option name="closed" value="true" />
+      <created>1718620655854</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1718620655854</updated>
+    </task>
+    <task id="LOCAL-00030" summary="139. Creating Places &amp; Adding it to a User">
+      <option name="closed" value="true" />
+      <created>1718622526735</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1718622526735</updated>
+    </task>
+    <task id="LOCAL-00031" summary="140. Deleting Places &amp; Removing it From the User">
+      <option name="closed" value="true" />
+      <created>1718632474861</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1718632474861</updated>
+    </task>
+    <task id="LOCAL-00032" summary="141. Getting Places - An Alternative">
+      <option name="closed" value="true" />
+      <created>1718633172549</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1718633172549</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -302,13 +380,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="90. Implementing Basic Routing" />
-    <MESSAGE value="91. Adding Place-Specific Routes" />
-    <MESSAGE value="92. Getting a Place By User ID" />
-    <MESSAGE value="93. Handling Errors" />
-    <MESSAGE value="Additional error handling middleware" />
-    <MESSAGE value="94. Adding our own Error Model" />
-    <MESSAGE value="95. Adding Controllers" />
     <MESSAGE value="..." />
     <MESSAGE value="96. Adding a POST Route &amp; Using Postman" />
     <MESSAGE value="97. Handling Errors for Unsupported Routes" />
@@ -326,7 +397,15 @@
     <MESSAGE value="130. Getting Places by the UserID" />
     <MESSAGE value="131. Updating Places" />
     <MESSAGE value="132. Deleting Places" />
-    <option name="LAST_COMMIT_MESSAGE" value="132. Deleting Places" />
+    <MESSAGE value="134. Creating the User Model" />
+    <MESSAGE value="135. Using the User Model for Signup" />
+    <MESSAGE value="136. Adding the User Login" />
+    <MESSAGE value="137. Getting Users" />
+    <MESSAGE value="138. Adding the Relation between Places &amp; Users" />
+    <MESSAGE value="139. Creating Places &amp; Adding it to a User" />
+    <MESSAGE value="140. Deleting Places &amp; Removing it From the User" />
+    <MESSAGE value="141. Getting Places - An Alternative" />
+    <option name="LAST_COMMIT_MESSAGE" value="141. Getting Places - An Alternative" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

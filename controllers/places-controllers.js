@@ -34,7 +34,7 @@ const getPlacesByUserId = async (req, res, next) => {
   // let places;
   let userWithPlaces;
   try {
-    userWithPlaces = await User.findById(userId).populate("places");
+    userWithPlaces = await User.findById(userId).populate("places"); // populate() is a mongoose method to get all the documents referenced in the places field
   } catch (err) {
     const error = new HttpError(
       "Fetching places failed, please try again later",
@@ -156,7 +156,7 @@ const deletePlace = async (req, res, next) => {
 
   let place;
   try {
-    place = await Place.findById(placeId).populate("creator");
+    place = await Place.findById(placeId).populate("creator"); // populate() is a mongoose method to get all the documents referenced in the creator field
   } catch (err) {
     return next(
       new HttpError("Something went wrong, could not delete place.", 500),
