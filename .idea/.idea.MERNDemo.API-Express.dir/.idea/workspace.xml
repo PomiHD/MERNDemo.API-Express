@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5acdad6b-ee7e-4c0b-b157-c4590a6b5c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MERNDemo.API-Express.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/places-controllers.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/places-controllers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
       <workItem from="1718429845958" duration="6664000" />
       <workItem from="1718612469345" duration="661000" />
       <workItem from="1718615909422" duration="12787000" />
-      <workItem from="1718684105596" duration="20000" />
+      <workItem from="1718684105596" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="90. Implementing Basic Routing">
       <option name="closed" value="true" />
@@ -359,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718633172549</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="142. Cleaning Up our Code">
+      <option name="closed" value="true" />
+      <created>1718684303341</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718684303341</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +387,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="..." />
     <MESSAGE value="96. Adding a POST Route &amp; Using Postman" />
     <MESSAGE value="97. Handling Errors for Unsupported Routes" />
     <MESSAGE value="98. Adding Patch Routes to Update Places" />
@@ -405,7 +411,8 @@
     <MESSAGE value="139. Creating Places &amp; Adding it to a User" />
     <MESSAGE value="140. Deleting Places &amp; Removing it From the User" />
     <MESSAGE value="141. Getting Places - An Alternative" />
-    <option name="LAST_COMMIT_MESSAGE" value="141. Getting Places - An Alternative" />
+    <MESSAGE value="142. Cleaning Up our Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="142. Cleaning Up our Code" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
